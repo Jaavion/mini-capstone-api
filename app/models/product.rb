@@ -13,4 +13,3 @@ class Product < ApplicationRecord
     return price.sum.tax  
   end
 end
-gi
