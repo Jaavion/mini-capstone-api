@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   post "/products", controller: "products", action: "create"
   delete "/products/:id", controller: "products", action: "destroy"
   patch "/products/:id", controller: "products", action: "update"
+  post "/users", controller: "users", action: "create"
+  post "/sessions", controller: "sessions", action: "create"
 end

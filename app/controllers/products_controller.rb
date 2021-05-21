@@ -1,7 +1,8 @@
 class ProductsController < ApplicationController
   def index
-    product = Product.all
-    render json: product.to_json
+     product = Product.where("name = ? #{params[:name]}" )
+    # product = Product.all
+    # render json: product.to ƒ_json
   end
   def show
     product = Product.find(params[:id])
