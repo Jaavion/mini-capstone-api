@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   patch "/products/:id", controller: "products", action: "update"
   post "/users", controller: "users", action: "create"
   post "/sessions", controller: "sessions", action: "create"
+  get "/orders", controller: "orders", action: "index"
+  post "/orders", controller: "orders", action: "create"
+  get "/orders/:id", controller: "orders", action: "show"
+
 end
